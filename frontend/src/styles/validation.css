@@ -1,0 +1,75 @@
+.steps {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.steps span {
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: var(--card);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.steps .on {
+  background: var(--primary);
+  color: #fff;
+}
+
+.rule-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.rule {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rule.on {
+  border-color: var(--primary);
+  background: var(--soft);
+}
+
+.rule small {
+  color: var(--muted);
+}
+
+.cards.small {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.report-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.report-head h3 {
+  margin: 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.null {
+  color: #dc2626;
+}
+
+.filter {
+  width: 300px;
+  margin-bottom: 12px;
+}
